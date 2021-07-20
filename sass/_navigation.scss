@@ -1,0 +1,113 @@
+/*********************/
+/*   Navigation Section   */
+/*********************/
+.navigation {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+
+  /** Mobile Checkbox and Icon **/ 
+  &__icon {
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__elements--mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /** Display Elements **/
+  &__elements {
+    &--desktop {
+      display: none;
+      @media (min-width: 992px) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+
+  &__elements {
+    &--mobile {
+      display: none;
+      background: #fff;
+      position: absolute;
+      top: 3rem;
+      width: 100%;
+      z-index: 5;
+      box-shadow: 0px 10px 16px #dbdbdb;
+      padding: 0 0 2rem 1rem;
+      border-radius: 20px;
+      
+      @media (min-width: 992px) {
+        display: none;
+      }
+      
+      .navigation__button {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__links {
+    &--desktop {
+      margin-left: 1rem;
+
+      @media (min-width: 1200px) {
+        margin-left: 5rem;
+      }
+    }
+
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__items {
+    list-style: none;
+    padding: 0;
+
+    &--desktop {
+      display: flex;
+      width: 25rem;
+      justify-content: space-around;
+    }
+
+    &--mobile {
+      margin: 1rem 0;
+
+      li {
+        margin: .5rem 0;
+      }
+    }
+  }
+
+  &__item {
+    font-weight: 500;
+    cursor: pointer;
+    color: $primary;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+  }
+}

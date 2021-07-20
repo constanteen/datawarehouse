@@ -1,0 +1,92 @@
+/*********************/
+/*   Story Section   */
+/*********************/
+
+.story {
+  margin-top: 13rem;
+
+  @media (min-width: 350px) {
+    margin-top: 16rem;
+  }
+  
+  @media (min-width: 450px) {
+    margin-top: 20rem;
+  }
+
+  @media (min-width: 576px) {
+    margin-top: 18rem;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 26rem;
+  }
+  
+  @media (min-width: 992px) {
+    margin-top: 4rem;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 12rem;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 8rem;
+  }
+
+  &__box {
+    display: flex;
+    width: 100%;
+    background-color: #f063b815;
+    border-radius: $border-50;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    @media (min-width: 992px) {
+      padding: 0 3rem;
+    }
+
+    @media (min-width: 1400px) {
+      padding: 0 8rem;
+    }
+  }
+
+  &__img {
+    max-width: 70%;
+
+    @media (min-width: 768px) {
+      width: 40%;
+    }
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+  }
+
+  &__description {
+    line-height: 1.8;
+    color: $secondary;
+    
+    @media (min-width: 992px) {
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 576px) {
+      padding-right: 1rem;
+    }
+
+  }
+
+  &__heading {
+    @include title;
+  }
+}

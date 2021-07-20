@@ -1,0 +1,94 @@
+
+
+/*********************/
+/*   Hero Section   */
+/*********************/
+.hero {
+  padding: 1rem 0;
+  display: flex;
+  position: relative;
+
+  @media (min-width: 1500px) {
+    padding: 2rem 0;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+    color: $primary;
+    width: 100%;
+    margin: 2rem 0;
+
+    @media (min-width: 355px) {
+      font-size: 2.5rem;
+      margin: 3rem 0;
+    }
+
+    @media (min-width: 576px) {
+      font-size: 4.5rem;
+    }
+    
+    @media (min-width: 992px) {
+      width: 63%;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    line-height: 1.8;
+    color: $secondary;
+    margin-bottom: 1rem;
+
+    @media (min-width: 576px) {
+      width: 70%;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 992px) {
+      width: 100%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 30%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    position: absolute;
+    top: 29rem;
+
+    @media (min-width: 300px) {
+      top: 27rem;
+    }
+
+    @media (min-width: 576px) {
+      top: 30rem;
+      padding: 0 5rem;
+    }
+
+    @media (min-width: 992px) {
+      width: 90%;
+      right: -10rem;
+      top: 7rem;
+      transform: translate(0, 0);
+    }
+
+    @media (min-width: 1090px) {
+      width: 80%;
+      right: -8rem;
+      top: 10rem;
+    }
+
+    @media (min-width: 1200px) {
+      right: -7rem;
+      width: 85%;
+      top: 9rem;
+    }
+
+  }
+
+  &__button {
+    margin: 3rem 0;
+  }
+}

@@ -1,0 +1,83 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 1.1rem 2.4rem;
+  border-radius: $border-50;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all .3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 16px #dbdbdb;
+    padding: 1.1rem 2.6rem;
+  }
+
+  &--white {
+    background-color: #fff;
+    border: #fff;
+    box-shadow: 0px 6px 14px #dbdbdb;
+    color: $primary;
+
+    img {
+      vertical-align: text-top;
+      margin-left: 10px;
+      width: 1.2rem;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+    border: $primary;
+    color: #fff;
+  }
+
+  &--secondary {
+    background-color: $secondary;
+    border: $secondary;
+    color: #fff;
+  }
+
+  &--tertiary {
+    background-color: $tertiary;
+    border: $tertiary;
+    color: #fff;
+  }
+
+  &--pink {
+    background-color: $pink;
+    border: $pink;
+    color: #fff;
+  }
+
+  &--text {
+    border: none;
+    color: $primary;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+
+    img {
+      margin-left: 1rem;
+    }
+  }
+
+}
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #9c69e221;
+  margin-top: 5rem;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: 992px) {
+    margin-top: 54rem;
+  }
+}

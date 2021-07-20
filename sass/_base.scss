@@ -1,0 +1,57 @@
+
+@font-face {
+  font-family: 'Avenir-Black';
+  src: url('/assets/fonts/Avenir-Black-03.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('/assets/fonts/Avenir-Medium-09.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Avenir-Heavy';
+  src: url('/assets/fonts/Avenir-Heavy-05.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Avenir-Light';
+  src: url('/assets/fonts/Avenir-Light-07.ttf') format('truetype');
+}
+
+
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+$primary: #212353;
+$secondary: #4B5D68;
+$tertiary: #9C69E2;
+$pink: #F063B8; 
+$white: #fff;
+$bg: #F7FBFE;
+$border-50: 50px;
+$border-20: 20px;
+
+/* mixins */
+@mixin title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  
+  @media (min-width: 992px) {
+    font-size: 2.5rem;
+  }
+}
+
+body {
+  font-family: 'Avenir-Medium', sans-serif;
+  margin: 2rem;
+  background-color: $bg;
+
+  @media (min-width: 992px) {
+    margin: 2rem 11rem;
+  }
+}

@@ -1,0 +1,148 @@
+/*************************/
+/*   Features Section   */
+/***********************/
+.features {
+  margin-top: 6rem;
+
+  &__heading {
+    @include title;
+    font-family: Helvetica, sans-serif;
+    color: $primary;
+  }
+
+  &__intro {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__description {
+    line-height: 1.8;
+    color: $secondary;
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 576px) {
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  
+
+  &__box {
+    margin-top: 2rem;
+    height: 13rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 360px) {
+      height: 20rem;
+    }
+
+    @media (min-width: 576px) {
+      width: 28rem;
+    }
+
+    &--one {
+      background: url(/assets/images/trapezoid_one.svg) no-repeat;
+      background-size: contain;
+
+      @media (min-width: 576px) {
+        background: url(/assets/images/search.png) no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &--two {
+      background: url(/assets/images/trapezoid_two.svg) no-repeat;
+      margin-top: 3rem;
+      background-size: contain;
+
+      @media (min-width: 576px) {
+        background: url(/assets/images/twentyfour.png) no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &--three {
+      background: url(/assets/images/trapezoid_three.svg) no-repeat;
+      background-size: contain;
+
+      @media (min-width: 576px) {
+        background: url(/assets/images/print.png) no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &--four {
+      background: url(/assets/images/trapezoid_four.svg) no-repeat;
+      background-size: contain;
+
+      @media (min-width: 576px) {
+        background: url(/assets/images/security.png) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    right: -1rem;
+    top: -13%;
+    transform: scale(.6);
+
+    @media (min-width: 300px) {
+      top: -10%;
+      transform: scale(.65);
+      right: -1rem;
+    }
+
+    @media (min-width: 340px) {
+      top: 5%;
+      transform: scale(.9);
+      right: -1rem;
+    }
+
+    @media (min-width: 370px) {
+      top: 12%;
+      right: -1rem;
+    }
+
+    @media (min-width: 430px) {
+      top: 15%;
+      width: 75%;
+    }
+
+    @media (min-width: 576px) {
+      top: 10%;
+      width: 48%;
+      transform: scale(1);
+      right: 1rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $primary;
+  }
+
+  &__subtitle {
+    margin: 1.2rem 0;
+    line-height: 1.8;
+    color: $secondary;
+  }
+}

@@ -1,0 +1,168 @@
+/*************************/
+/*   Testimonials Section   */
+/***********************/
+
+.testimonials {
+  margin-top: 5rem;
+  position: relative;
+
+  &__box {
+    background-color: $tertiary;
+    border-radius: $border-50;
+    overflow: hidden;
+    padding: 0 1rem 3rem 1rem;
+
+    &::before {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(90deg, transparent, transparent, transparent, transparent, $tertiary);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 6;
+      border-radius: $border-50;
+    }
+
+    @media (min-width: 576px) {
+      padding: 0 1rem 5rem 1rem;
+    }
+
+    @media (min-width: 768px) {
+      padding: 0 6rem 5rem 6rem;
+    }
+
+    @media (min-width: 992px) {
+      position: absolute;
+      padding: 0 0 5rem 10rem;
+      &::before {
+        content: "";
+      }
+    }
+  }
+
+  &__heading {
+    padding: 3rem 0 0 0;
+    color: $white;
+    @include title;
+
+    @media (min-width: 576px) {
+      padding: 5rem 0 3rem 0;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    position: relative;
+    padding-right: 0;
+
+    @media (min-width: 992px) {
+      padding-right: 25rem;
+    }
+  }
+
+  &__card {
+    background-color: $white;
+    display: flex;
+    width: 43rem;
+    margin-bottom: 3rem;
+    border-radius: $border-20;
+    padding: 1rem;
+    flex-direction: column;
+
+    @media (min-width: 576px) {
+      padding: 5rem 2rem 5rem 4rem;
+      flex-direction: row;
+    }
+  }
+
+  &__cardTwo {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: flex;
+      position: absolute;
+      right: -20rem;
+      box-shadow: 0 27px 0px 0px #9663E0;
+    }
+  }
+
+  &__cardOne {
+    box-shadow: 0 27px 0px 0px #8a56db;
+  }
+
+  &__text {
+    padding: 0;
+    
+    @media (min-width: 576px) {
+      padding: 0 1rem 0 4rem;
+    }
+
+    @media (min-width: 768px) {
+      padding: 0 0 0 4rem;
+    }
+
+    @media (min-width: 992px) {
+      padding: 0 7rem 0 4rem;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    color: $primary;
+    margin: 1rem 0;
+  }
+
+  &__status {
+    color: $tertiary;
+    font-weight: 500;
+  }
+
+  &__comment {
+    margin: 1rem 0;
+    line-height: 1.8;
+    color: $secondary;
+  }
+
+  &__slide {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__dotSlide {
+    display: flex;
+    align-items: center;
+    span {
+      height: 0.3rem;
+      width: 0.3rem;
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      
+      &:not(:first-child) {
+        margin-left: 1rem;
+      }
+
+      &:first-child {
+        height: 0.6rem;
+        width: 0.6rem;
+        background-color: $pink;
+      }
+    }
+  }
+
+  &__arrows {
+    display: flex;
+    font-size: 1rem;
+    margin-right: 0rem;
+
+    @media (min-width: 992px) {
+      margin-right: 6rem;
+    }
+  }
+
+  &__larrow {
+    margin-right: 1rem;
+  }
+
+}
