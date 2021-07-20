@@ -53,42 +53,42 @@
     }
 
     &--one {
-      background: url(/assets/images/trapezoid_one.svg) no-repeat;
+      background: url(./assets/images/trapezoid_one.svg) no-repeat;
       background-size: contain;
 
       @media (min-width: 576px) {
-        background: url(/assets/images/search.png) no-repeat;
+        background: url(./assets/images/search.png) no-repeat;
         background-size: contain;
       }
     }
 
     &--two {
-      background: url(/assets/images/trapezoid_two.svg) no-repeat;
+      background: url(./assets/images/trapezoid_two.svg) no-repeat;
       margin-top: 3rem;
       background-size: contain;
 
       @media (min-width: 576px) {
-        background: url(/assets/images/twentyfour.png) no-repeat;
+        background: url(./assets/images/twentyfour.png) no-repeat;
         background-size: contain;
       }
     }
 
     &--three {
-      background: url(/assets/images/trapezoid_three.svg) no-repeat;
+      background: url(./assets/images/trapezoid_three.svg) no-repeat;
       background-size: contain;
 
       @media (min-width: 576px) {
-        background: url(/assets/images/print.png) no-repeat;
+        background: url(./assets/images/print.png) no-repeat;
         background-size: contain;
       }
     }
 
     &--four {
-      background: url(/assets/images/trapezoid_four.svg) no-repeat;
+      background: url(./assets/images/trapezoid_four.svg) no-repeat;
       background-size: contain;
 
       @media (min-width: 576px) {
-        background: url(/assets/images/security.png) no-repeat;
+        background: url(./assets/images/security.png) no-repeat;
         background-size: contain;
       }
     }
