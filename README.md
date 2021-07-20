@@ -44,4 +44,4 @@ This is an example of how to list things you need to use the software and how to
 
 Chilo Nwokolo - [@ondefined](https://twitter.com/ondefined) - chilo.nwokolo@gmail.com
 
-Project Link: [https://github.com/constanteen/datawarehouse](https://github.com/constanteen/datawarehouse)
+Project Link: [https://constanteen.github.io/datawarehouse/](https://constanteen.github.io/datawarehouse/)
